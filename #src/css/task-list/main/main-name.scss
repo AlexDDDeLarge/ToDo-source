@@ -1,0 +1,81 @@
+.main-name {
+  position: relative;
+  width: 100%;
+  min-height: 165px;
+  max-height: 182px;
+  padding-bottom: 25px;
+  background-image:
+    linear-gradient(rgba(0, 71, 171, 0.2), rgba(0, 71, 171, 0.2)),
+    url(../img/bc-1.jpg);
+    /*url(../img/landscape.jpg);*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-name__container {
+  overflow: hidden;
+  transition: margin-left 0.45s ease-in-out;
+}
+
+.main-name__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-name__caption {
+  display:  -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+  margin: 25px 8px 0px 32px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+  transition: margin-left 0.45s ease-in-out;
+  @media screen and (max-width: 824px) {
+    -webkit-line-clamp: 2;
+  }
+  @media screen and (max-width: 414px) {
+    font-size: 28px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 21px;
+  }
+}
+
+.main-name__change-btn {
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  margin-top: 26px;
+  margin-right: 24px;
+  background-color: inherit;
+  background-image: url('../img/pen-cap.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 26px;
+  cursor: pointer;
+  opacity: 0.8;
+  @media screen and (max-width: 414px) {
+    margin-top: 28px;
+    background-size: 24px;
+  }
+  @media screen and (max-width: 375px) {
+    margin-top: 30px;
+    background-size: 20px;
+  }
+  /*@media screen and (max-width: 320px) {
+    font-size: 21px;
+  }*/
+}

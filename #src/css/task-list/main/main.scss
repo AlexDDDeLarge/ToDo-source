@@ -1,0 +1,12 @@
+.main {
+  @media screen and (min-width: 768px) {
+    margin-top: 75px;
+  }
+}
+
+.main-content {
+  min-height: 100vh;
+  transition: margin-left 0.45s ease-in-out;
+  /*background-color: lightyellow;*/
+
+}

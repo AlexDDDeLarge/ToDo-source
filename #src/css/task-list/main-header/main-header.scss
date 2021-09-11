@@ -1,0 +1,20 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 12px;
+  /*background-color: #0047AB;*/
+  background-color: #001758;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,0 +1,197 @@
+.menu-list {
+  width: 300%;
+  height: 100%;
+  /*padding-top: 76px;*/
+
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 29px;
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
+}
+
+.menu-list__item {
+  position: relative;
+  width: 100%;
+  &:hover,
+  &:active {
+    background-color: #001758;
+    color: #ffffff;
+  }
+}
+
+.menu-list__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: inherit;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: #001758;
+    color: #ffffff;
+  }
+  @media screen and (max-width: 960px) {
+    color: #ffffff;
+    &:hover,
+    &:active {
+      background-color: #f0effa;
+      color: #000000;
+    }
+  }
+  @media screen and (max-width: 568px) {
+    font-size: 19px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 14px;
+  }
+}
+
+.menu-list__item--margin-bottom {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /*color: #0047ab;*/
+  color: #001758;
+  @media screen and (max-width: 568px) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-list__item--btn {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    &:hover {
+      background-color: inherit;
+    }
+  }
+}
+
+/* Иконки и их состояния */
+
+.menu-ico__svg{
+  position: absolute;
+  top: 50%;
+  margin-left: 24px;
+  transform: translateY(-50%);
+  @media screen and (max-width: 960px) {
+    fill: #ffffff;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 9px;
+  }
+  @media screen and (max-width: 568px) {
+    width: 21px;
+    height: 21px;
+    margin-left: 8px;
+  }
+}
+
+.menu-list__text {
+  margin-left: 67px;
+  @media screen and (max-width: 768px) {
+    margin-left: 52px;
+  }
+  @media screen and (max-width: 568px) {
+    margin-left: 39px;
+  }
+}
+
+.menu-ico__svg--big {
+  /*fill: #0047ab;*/
+  fill: #001758;
+  @media screen and (max-width: 568px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.menu-list__button:hover .menu-ico__svg--big {
+  fill: #ffffff;
+}
+
+.menu-list__button:hover .menu-ico__svg,
+.menu-list__button:active .menu-ico__svg {
+  fill: #ffffff;
+  @media screen and (max-width: 960px) {
+    fill: #000000;
+  }
+}
+
+// field
+
+.menu-list__field {
+  width: 256px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background-color: inherit;
+  &::placeholder {
+    color: #808080;
+  }
+  @media screen and (max-width: 824px) {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+}
+
+.menu-list__button:hover .menu-list__field {
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  &::placeholder {
+    color: #808080;
+  }
+  @media screen and (max-width: 824px) {
+    border-color: #000000;
+    color: #000000;
+  }
+}
+
+.menu-list__item--btn-container {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &:hover {
+    background-color: inherit;
+  }
+}
+
+.menu-list__item--btn-container.show {
+  display: flex;
+}
+
+.menu-list__cancel-btn,
+.menu-list__add-btn {
+  width: 125px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  background-color: #000000;
+  color: #ffffff;
+  @media screen and (max-width: 824px) {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+.menu-list__cancel-btn {
+  margin-left: 20px;
+  margin-right: 20px;
+}

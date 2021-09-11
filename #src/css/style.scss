@@ -1,0 +1,63 @@
+:focus {
+  outline: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0px;
+}
+
+button {
+  border: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+  /*max-width: 940px;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  @media screen and (min-width: 1440px) {
+    max-width: 1070px;
+  }
+  @media screen and (max-width: 1440px) {
+    max-width: 940px;
+  }
+}

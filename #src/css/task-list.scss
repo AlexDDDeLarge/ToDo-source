@@ -1,0 +1,16 @@
+/* Общие стили */
+@import"normalize.scss";
+@import"style.scss";
+/* Стили хэдера */
+@import"task-list/main-header/main-header.scss";
+@import"task-list/main-header/main-header__menu-btn.scss";
+@import"task-list/main-header/main-header__search.scss";
+/* Стили меню */
+@import"task-list/menu/menu.scss";
+@import"task-list/menu/menu__list.scss";
+@import"task-list/menu/menu-sublist.scss";
+/*Стили мэйна*/
+@import"task-list/main/main.scss";
+@import"task-list/main/main-name.scss";
+@import"task-list/main/main-content.scss";
+@import"task-list/main/task-list.scss";
